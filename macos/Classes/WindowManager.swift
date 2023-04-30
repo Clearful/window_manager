@@ -342,12 +342,12 @@ public class WindowManager: NSObject, NSWindowDelegate {
         let windowButtonVisibility: Bool = args["windowButtonVisibility"] as! Bool
         
         if (titleBarStyle == "hidden") {
-            mainWindow.titleVisibility = .hidden
-            mainWindow.titlebarAppearsTransparent = true
+//             mainWindow.titleVisibility = .hidden
+//             mainWindow.titlebarAppearsTransparent = true
 //             mainWindow.styleMask.insert(.fullSizeContentView)
         } else {
-            mainWindow.titleVisibility = .visible
-            mainWindow.titlebarAppearsTransparent = false
+//             mainWindow.titleVisibility = .visible
+//             mainWindow.titlebarAppearsTransparent = false
 //             mainWindow.styleMask.remove(.fullSizeContentView)
         }
 
