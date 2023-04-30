@@ -338,24 +338,24 @@ public class WindowManager: NSObject, NSWindowDelegate {
     }
     
     public func setTitleBarStyle(_ args: [String: Any]) {
-//         let titleBarStyle: String = args["titleBarStyle"] as! String
-//         let windowButtonVisibility: Bool = args["windowButtonVisibility"] as! Bool
+        let titleBarStyle: String = args["titleBarStyle"] as! String
+        let windowButtonVisibility: Bool = args["windowButtonVisibility"] as! Bool
         
-//         if (titleBarStyle == "hidden") {
-//             mainWindow.titleVisibility = .hidden
-//             mainWindow.titlebarAppearsTransparent = true
-//             mainWindow.styleMask.insert(.fullSizeContentView)
-//         } else {
-//             mainWindow.titleVisibility = .visible
-//             mainWindow.titlebarAppearsTransparent = false
-//             mainWindow.styleMask.remove(.fullSizeContentView)
-//         }
+        if (titleBarStyle == "hidden") {
+            mainWindow.titleVisibility = .hidden
+            mainWindow.titlebarAppearsTransparent = true
+            mainWindow.styleMask.insert(.fullSizeContentView)
+        } else {
+            mainWindow.titleVisibility = .visible
+            mainWindow.titlebarAppearsTransparent = false
+            mainWindow.styleMask.remove(.fullSizeContentView)
+        }
 
-//         mainWindow.isOpaque = false
-//         mainWindow.hasShadow = true
+        mainWindow.isOpaque = false
+        mainWindow.hasShadow = true
 
-//          let titleBarView: NSView = (mainWindow.standardWindowButton(.closeButton)?.superview)!.superview!
-//          titleBarView.isHidden = false
+         let titleBarView: NSView = (mainWindow.standardWindowButton(.closeButton)?.superview)!.superview!
+         titleBarView.isHidden = false
         
 //         mainWindow.standardWindowButton(.closeButton)?.isHidden = !windowButtonVisibility
 //         mainWindow.standardWindowButton(.miniaturizeButton)?.isHidden = !windowButtonVisibility
