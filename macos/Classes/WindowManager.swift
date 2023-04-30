@@ -68,10 +68,10 @@ public class WindowManager: NSObject, NSWindowDelegate {
         mainWindow.hasShadow = false
         mainWindow.backgroundColor = NSColor.clear
         
-        if (mainWindow.styleMask.contains(.titled)) {
-            let titleBarView: NSView = (mainWindow.standardWindowButton(.closeButton)?.superview)!.superview!
-            titleBarView.isHidden = true
-        }
+//         if (mainWindow.styleMask.contains(.titled)) {
+//             let titleBarView: NSView = (mainWindow.standardWindowButton(.closeButton)?.superview)!.superview!
+//             titleBarView.isHidden = true
+//         }
     }
     
     public func destroy() {
